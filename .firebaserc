@@ -1,0 +1,18 @@
+{
+  "targets": {
+    "login-ng-b97ae": {
+      "hosting": {
+        "app": [
+          "login-ng-b97ae"
+        ]
+      }
+    },
+    "paulafy-a9f7e": {
+      "hosting": {
+        "app": [
+          "paulafy-a9f7e"
+        ]
+      }
+    }
+  }
+}
