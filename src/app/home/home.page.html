@@ -11,16 +11,37 @@
     <ion-toolbar>
       <ion-title size="large">PaulaFy</ion-title>
     </ion-toolbar>
+    <style>
+      :root {
+        --ion-safe-area-top: 20px;
+        --ion-safe-area-bottom: 22px;
+      }
+    </style>
   </ion-header>
 
-  <div id="container">
-    <ion-row>
-      <ion-col>
-        <ion-button type="submit" color="danger" (click)="onLoginGoogle()" expand="block"
-          href="..\login">Login
-        </ion-button>
-      </ion-col>
-    </ion-row>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+  <ion-app>
+    <ion-header translucent>
+      <ion-toolbar>
+        <ion-title>Card</ion-title>
+      </ion-toolbar>
+    </ion-header>,
+    <ion-content fullscreen>
+      <ion-card>
+        
+        <ion-card-header>
+          <img src="../assets/icon/PaulaFyIcono.png" />
+        </ion-card-header>
+        <ion-card-content>
+          <ion-row>
+            <ion-col>
+              <ion-button routerLink="/login" expand="block">Login</ion-button>
+              <a routerLink="/register">Create an account </a>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-content>
+  </ion-app>
+
 </ion-content>
